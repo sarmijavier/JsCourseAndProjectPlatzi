@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var javier = {
+            nombre: 'Javier',
+            apellido: 'Sarmiento',
+            edad: 20
+        }
+
+        function esMayorDeEdad(persona) {
+            if (persona.edad > 18) {
+                var mensaje = 'es mayor de edad'
+            } else {
+                var mensaje = 'es menor de edad'
+            }
+            console.log(mensaje)
+        }
+
+        function esMayorDeEdadLet(persona) {
+            let mensaje
+            if (persona.edad > 18) {
+                mensaje = 'es mayor de edad'
+            } else {
+                mensaje = 'es menor de edad'
+            }
+            console.log(mensaje)
+        }
+
+        function esMayorDeEdadConst(persona) {
+            let mensaje
+            const MAYORIA_DE_EDAD = 18
+            if (persona.edad > MAYORIA_DE_EDAD) {
+                mensaje = 'es mayor de edad'
+            } else {
+                mensaje = 'es menor de edad'
+            }
+            console.log(mensaje)
+        }
+        //esMayorDeEdadConst(javier)
+        for (let i = 0; i < 10; i++) {
+            console.log(i)
+        }
+        console.log(`el valor de i es ${i}`)
+    </script>
+</body>
+
+</html>
